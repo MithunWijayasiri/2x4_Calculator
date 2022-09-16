@@ -1,5 +1,6 @@
 # 2x4_Calculator
-2x4 is simple calculator for the android to do basic math calculations in two values.
+2x4 Calculator is a simple calculator for Android.
+Basic math calculations available.
 
 <p align="center">
   <a href="https://github.com/MithunWijayasiri/2x4_Calculator">
