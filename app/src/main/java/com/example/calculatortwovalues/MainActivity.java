@@ -6,6 +6,7 @@ import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,9 +21,9 @@ public class MainActivity extends AppCompatActivity {
     public void Add(View v)
     {
 //        Variable Declaration
-        EditText et1=(EditText)findViewById(R.id.editTextNumber);
-        EditText et2=(EditText)findViewById(R.id.editTextNumber2);
-        EditText et3=(EditText)findViewById(R.id.editTextNumber3);
+        EditText et1= findViewById(R.id.editTextNumber);
+        EditText et2= findViewById(R.id.editTextNumber2);
+        TextView et3= findViewById(R.id.editTextNumber3);
 
 //        Covert variable into integer
         int n1 = Integer.parseInt(et1.getText().toString());
@@ -40,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
 
         EditText et1=(EditText)findViewById(R.id.editTextNumber);
         EditText et2=(EditText)findViewById(R.id.editTextNumber2);
-        EditText et3=(EditText)findViewById(R.id.editTextNumber3);
+        TextView et3= findViewById(R.id.editTextNumber3);
 
         int n1 = Integer.parseInt(et1.getText().toString());
         int n2 = Integer.parseInt(et2.getText().toString());
@@ -57,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
     {
         EditText et1=(EditText)findViewById(R.id.editTextNumber);
         EditText et2=(EditText)findViewById(R.id.editTextNumber2);
-        EditText et3=(EditText)findViewById(R.id.editTextNumber3);
+        TextView et3= findViewById(R.id.editTextNumber3);
 
         int n1 = Integer.parseInt(et1.getText().toString());
         int n2 = Integer.parseInt(et2.getText().toString());
@@ -74,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
     {
         EditText et1=(EditText)findViewById(R.id.editTextNumber);
         EditText et2=(EditText)findViewById(R.id.editTextNumber2);
-        EditText et3=(EditText)findViewById(R.id.editTextNumber3);
+        TextView et3= findViewById(R.id.editTextNumber3);
 
         int n1 = Integer.parseInt(et1.getText().toString());
         int n2 = Integer.parseInt(et2.getText().toString());
