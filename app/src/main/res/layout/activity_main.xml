@@ -55,7 +55,6 @@
         android:layout_marginTop="48dp"
         android:background="#00917C"
         android:textSize="20sp"
-        android:onClick="Add"
         android:text="Add"
         android:textColor="#ffffff"
         app:layout_constraintEnd_toStartOf="@+id/buttonSubtract"
@@ -69,7 +68,6 @@
         android:layout_height="50dp"
         android:layout_marginTop="36dp"
         android:background="#D7385E"
-        android:onClick="Multiply"
         android:text="Multiply"
         android:textColor="#ffffff"
         android:textSize="20sp"
@@ -87,7 +85,6 @@
         android:layout_marginTop="48dp"
         android:layout_marginEnd="64dp"
         android:background="#D7385E"
-        android:onClick="Subtract"
         android:text="Subtract"
         android:textColor="#ffffff"
         android:textSize="20sp"
@@ -101,7 +98,6 @@
         android:layout_marginTop="36dp"
         android:layout_marginEnd="64dp"
         android:background="#00917C"
-        android:onClick="Divide"
         android:text="Divide"
         android:textSize="20sp"
         android:textColor="#ffffff"
@@ -127,4 +123,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/buttonClear"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:text="Clear"
+        android:background="@color/design_default_color_on_primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonMultiply"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
