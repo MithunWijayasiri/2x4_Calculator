@@ -41,56 +41,32 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         clearButton.setOnClickListener(this);
     }
 
-    private void Add()
-    {
-        int n1 = Integer.parseInt(et1.getText().toString());
-        int n2 = Integer.parseInt(et2.getText().toString());
-        int result = n1 + n2;
+    private void calculate(View view) {
+       final int n1 = Integer.parseInt(et1.getText().toString());
+       final int n2 = Integer.parseInt(et2.getText().toString());
+       final int result;
 
-        tv.setText("Total Value " + result);
-    }
-
-    private void Subtract()
-    {
-        int n1 = Integer.parseInt(et1.getText().toString());
-        int n2 = Integer.parseInt(et2.getText().toString());
-        int result = n1 - n2;
-
-        tv.setText("Subtract Value " + result);
-    }
-
-    private void Multiply()
-    {
-        int n1 = Integer.parseInt(et1.getText().toString());
-        int n2 = Integer.parseInt(et2.getText().toString());
-        int result = n1 * n2;
-
-        tv.setText("Multiply Value " + result);
-    }
-
-    private void Divide()
-    {
-        int n1 = Integer.parseInt(et1.getText().toString());
-        int n2 = Integer.parseInt(et2.getText().toString());
-        int result = n1 / n2;
-
-        tv.setText("Divide Value " + result);
+       if (view == addButton) {
+           result = n1 + n2;
+           tv.setText(Integer.toString(result));
+       } else if (view == subButton) {
+           result = n1 - n2;
+           tv.setText(Integer.toString(result));
+       } else if (view == divideButton) {
+           result = n1 / n2;
+           tv.setText(Integer.toString(result));
+       } else if (view == multiplyButton) {
+           result = n1 * n2;
+           tv.setText(Integer.toString(result));
+       } else if (view == clearButton) {
+           tv.setText("");
+           et1.getText().clear();
+           et2.getText().clear();
+       }
     }
 
     @Override
     public void onClick(View v) {
-        if (v == addButton) {
-            Add();
-        } else if (v == multiplyButton) {
-            Multiply();
-        } else if (v == divideButton) {
-            Divide();
-        } else if (v == subButton) {
-            Subtract();
-        } else if (v == clearButton) {
-            tv.setText("");
-            et1.getText().clear();
-            et2.getText().clear();
-        }
+        calculate(v);
     }
 }
