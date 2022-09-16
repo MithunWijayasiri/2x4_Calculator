@@ -2,7 +2,7 @@
 2x4 is simple calculator for the android to do basic math calculations in two values.
 
 <p align="center">
-  <a href="https://skillicons.dev">
+  <a href="https://github.com/MithunWijayasiri/2x4_Calculator">
     <img src="https://skillicons.dev/icons?i=java,androidstudio,github,figma" />
   </a>
 </p>
