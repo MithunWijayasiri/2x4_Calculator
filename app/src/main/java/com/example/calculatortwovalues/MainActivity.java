@@ -11,6 +11,9 @@ import android.widget.TextView;
 @SuppressLint("SetTextI18n")
 public class MainActivity extends AppCompatActivity {
 
+    private EditText et1, et2;
+    private TextView tv;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,9 +25,9 @@ public class MainActivity extends AppCompatActivity {
     public void Add(View v)
     {
 //        Variable Declaration
-        EditText et1= findViewById(R.id.editTextNumber);
-        EditText et2= findViewById(R.id.editTextNumber2);
-        TextView et3= findViewById(R.id.editTextNumber3);
+        et1 = findViewById(R.id.editTextNumber);
+        et2 = findViewById(R.id.editTextNumber2);
+        tv = findViewById(R.id.editTextNumber3);
 
 //        Covert variable into integer
         int n1 = Integer.parseInt(et1.getText().toString());
@@ -32,16 +35,16 @@ public class MainActivity extends AppCompatActivity {
         int result = n1 + n2;
 
 //        Display Result
-        et3.setText("Total Value " + result);
+        tv.setText("Total Value " + result);
     }
 
     //    Subtract Operation
     public void Subtract(View v)
     {
 
-        EditText et1= findViewById(R.id.editTextNumber);
-        EditText et2= findViewById(R.id.editTextNumber2);
-        TextView et3= findViewById(R.id.editTextNumber3);
+        et1 = findViewById(R.id.editTextNumber);
+        et2 = findViewById(R.id.editTextNumber2);
+        tv = findViewById(R.id.editTextNumber3);
 
         int n1 = Integer.parseInt(et1.getText().toString());
         int n2 = Integer.parseInt(et2.getText().toString());
@@ -49,15 +52,15 @@ public class MainActivity extends AppCompatActivity {
         int result = n1 - n2;
 
 //      Display Result
-        et3.setText("Subtract Value " + result);
+        tv.setText("Subtract Value " + result);
     }
 
         //    Multiply Operation
     public void Multiply(View v)
     {
-        EditText et1= findViewById(R.id.editTextNumber);
-        EditText et2= findViewById(R.id.editTextNumber2);
-        TextView et3= findViewById(R.id.editTextNumber3);
+        et1 = findViewById(R.id.editTextNumber);
+        et2 = findViewById(R.id.editTextNumber2);
+        tv = findViewById(R.id.editTextNumber3);
 
         int n1 = Integer.parseInt(et1.getText().toString());
         int n2 = Integer.parseInt(et2.getText().toString());
@@ -65,15 +68,15 @@ public class MainActivity extends AppCompatActivity {
         int result = n1 * n2;
 
 //        Display Result
-        et3.setText("Multiply Value " + result);
+        tv.setText("Multiply Value " + result);
     }
 
         //    Divide Operation
     public void Divide(View v)
     {
-        EditText et1= findViewById(R.id.editTextNumber);
-        EditText et2= findViewById(R.id.editTextNumber2);
-        TextView et3= findViewById(R.id.editTextNumber3);
+        et1 = findViewById(R.id.editTextNumber);
+        et2 = findViewById(R.id.editTextNumber2);
+        tv = findViewById(R.id.editTextNumber3);
 
         int n1 = Integer.parseInt(et1.getText().toString());
         int n2 = Integer.parseInt(et2.getText().toString());
@@ -81,6 +84,6 @@ public class MainActivity extends AppCompatActivity {
         int result = n1 / n2;
 
 //        Display Result
-        et3.setText("Divide Value " + result);
+        tv.setText("Divide Value " + result);
     }
 }
