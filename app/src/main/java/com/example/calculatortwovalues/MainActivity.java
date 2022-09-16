@@ -39,8 +39,8 @@ public class MainActivity extends AppCompatActivity {
     public void Subtract(View v)
     {
 
-        EditText et1=(EditText)findViewById(R.id.editTextNumber);
-        EditText et2=(EditText)findViewById(R.id.editTextNumber2);
+        EditText et1= findViewById(R.id.editTextNumber);
+        EditText et2= findViewById(R.id.editTextNumber2);
         TextView et3= findViewById(R.id.editTextNumber3);
 
         int n1 = Integer.parseInt(et1.getText().toString());
@@ -56,8 +56,8 @@ public class MainActivity extends AppCompatActivity {
     @SuppressLint("SetTextI18n")
     public void Multiply(View v)
     {
-        EditText et1=(EditText)findViewById(R.id.editTextNumber);
-        EditText et2=(EditText)findViewById(R.id.editTextNumber2);
+        EditText et1= findViewById(R.id.editTextNumber);
+        EditText et2= findViewById(R.id.editTextNumber2);
         TextView et3= findViewById(R.id.editTextNumber3);
 
         int n1 = Integer.parseInt(et1.getText().toString());
@@ -73,8 +73,8 @@ public class MainActivity extends AppCompatActivity {
     @SuppressLint("SetTextI18n")
     public void Divide(View v)
     {
-        EditText et1=(EditText)findViewById(R.id.editTextNumber);
-        EditText et2=(EditText)findViewById(R.id.editTextNumber2);
+        EditText et1= findViewById(R.id.editTextNumber);
+        EditText et2= findViewById(R.id.editTextNumber2);
         TextView et3= findViewById(R.id.editTextNumber3);
 
         int n1 = Integer.parseInt(et1.getText().toString());
