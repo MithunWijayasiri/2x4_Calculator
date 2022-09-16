@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
+@SuppressLint("SetTextI18n")
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -17,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //    Add Operation
-    @SuppressLint("SetTextI18n")
+
     public void Add(View v)
     {
 //        Variable Declaration
@@ -35,7 +36,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //    Subtract Operation
-    @SuppressLint("SetTextI18n")
     public void Subtract(View v)
     {
 
@@ -53,7 +53,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
         //    Multiply Operation
-    @SuppressLint("SetTextI18n")
     public void Multiply(View v)
     {
         EditText et1= findViewById(R.id.editTextNumber);
@@ -70,7 +69,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
         //    Divide Operation
-    @SuppressLint("SetTextI18n")
     public void Divide(View v)
     {
         EditText et1= findViewById(R.id.editTextNumber);
