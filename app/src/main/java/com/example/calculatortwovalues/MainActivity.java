@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         et2 = findViewById(R.id.editTextNumber2);
 
         //init output textview
-        tv = findViewById(R.id.editTextNumber3);
+        tv = findViewById(R.id.outputResult);
 
         // init buttons
         addButton = findViewById(R.id.buttonAdd);

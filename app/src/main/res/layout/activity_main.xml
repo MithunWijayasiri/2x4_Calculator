@@ -12,6 +12,7 @@
         android:layout_width="280dp"
         android:layout_height="40dp"
         android:background="#F8F1F1"
+        android:hint="Enter a value"
         android:ems="10"
         android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -25,6 +26,7 @@
         android:id="@+id/editTextNumber2"
         android:layout_width="280dp"
         android:layout_height="40dp"
+        android:hint="Enter a value"
         android:layout_marginTop="16dp"
         android:background="#F8F1F1"
         android:ems="10"
@@ -35,10 +37,11 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
 
     <TextView
-        android:id="@+id/editTextNumber3"
+        android:id="@+id/outputResult"
         android:layout_width="280dp"
         android:layout_height="45dp"
         android:layout_marginTop="64dp"
+        android:hint="Output result"
         android:gravity="center_vertical"
         android:textSize="18sp"
         android:textColor="@android:color/black"
@@ -60,7 +63,7 @@
         app:layout_constraintEnd_toStartOf="@+id/buttonSubtract"
         app:layout_constraintHorizontal_bias="0.616"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber3" />
+        app:layout_constraintTop_toBottomOf="@+id/outputResult" />
 
     <Button
         android:id="@+id/buttonMultiply"
@@ -89,7 +92,7 @@
         android:textColor="#ffffff"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber3" />
+        app:layout_constraintTop_toBottomOf="@+id/outputResult" />
 
     <Button
         android:id="@+id/buttonDivide"
