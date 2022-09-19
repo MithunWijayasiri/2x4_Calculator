@@ -2,8 +2,6 @@
 2x4 Calculator is a simple calculator for Android.
 Basic math calculations available.
 
-Feel free to use this code as you want.
-
 <p align="center">
   <a href="https://github.com/MithunWijayasiri/2x4_Calculator">
     <img src="https://skillicons.dev/icons?i=java,androidstudio,github,figma" />
