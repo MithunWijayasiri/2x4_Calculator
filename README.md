@@ -9,4 +9,5 @@ Basic math calculations available.
 </p>
 
 
-<img width="810" alt="2x4" src="https://user-images.githubusercontent.com/104470671/190652361-2977219c-7fa8-47bf-88cb-756dcf6f10fb.png">
+
+![2x4](https://user-images.githubusercontent.com/104470671/191559936-f63358e0-90ae-497a-aa7d-c5271b9152e6.jpg)
