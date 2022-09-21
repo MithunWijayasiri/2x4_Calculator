@@ -7,6 +7,8 @@
     android:background="#06283D"
     tools:context=".MainActivity">
 
+<!--    Todo List:  Add float values support
+                    Fix UI-->
     <EditText
         android:id="@+id/editTextNumber"
         android:layout_width="280dp"
