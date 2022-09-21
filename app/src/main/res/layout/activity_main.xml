@@ -17,10 +17,10 @@
         android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.062" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.026" />
 
     <Button
         android:id="@+id/buttonClear"
@@ -40,7 +40,7 @@
         android:id="@+id/buttonDivide"
         android:layout_width="120dp"
         android:layout_height="40dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="25dp"
         android:layout_marginEnd="64dp"
         android:background="#00917C"
         android:text="Divide"
@@ -55,7 +55,7 @@
         android:id="@+id/buttonMultiply"
         android:layout_width="120dp"
         android:layout_height="40dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="25dp"
         android:background="#00917C"
         android:text="Multiply"
         android:textColor="#ffffff"
@@ -85,7 +85,7 @@
     <Button
         android:id="@+id/buttonAdd"
         android:layout_width="120dp"
-        android:layout_height="40dp"
+        android:layout_height="35dp"
         android:layout_marginTop="40dp"
         android:background="#00917C"
         android:text="Add"
@@ -100,7 +100,7 @@
         android:id="@+id/buttonSubtract"
         android:layout_width="120dp"
         android:layout_height="40dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="35dp"
         android:layout_marginEnd="64dp"
         android:background="#00917C"
         android:text="Subtract"
@@ -123,19 +123,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="Simple Calculator"
-        android:textAlignment="center"
-        android:textColor="#ffff"
-        android:textSize="30sp"
-        android:textStyle="bold"
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="280dp"
+        android:layout_height="140dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.511"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:srcCompat="@drawable/logo"
+        tools:layout_editor_absoluteY="16dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
