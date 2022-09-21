@@ -26,22 +26,24 @@
         android:id="@+id/buttonClear"
         android:layout_width="80dp"
         android:layout_height="45dp"
+        android:layout_marginTop="64dp"
         android:background="#B93160"
         android:text="Clear"
         android:textColor="#ffff"
-        app:layout_constraintBottom_toTopOf="@+id/buttonSubtract"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.806"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextNumber2"
-        app:layout_constraintVertical_bias="0.615" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/buttonDivide"
         android:layout_width="120dp"
-        android:layout_height="40dp"
+        android:layout_height="35dp"
         android:layout_marginTop="25dp"
         android:layout_marginEnd="64dp"
+        android:layout_marginBottom="228dp"
         android:background="#00917C"
         android:text="Divide"
         android:textColor="#ffffff"
@@ -54,7 +56,7 @@
     <Button
         android:id="@+id/buttonMultiply"
         android:layout_width="120dp"
-        android:layout_height="40dp"
+        android:layout_height="35dp"
         android:layout_marginTop="25dp"
         android:background="#00917C"
         android:text="Multiply"
@@ -78,7 +80,7 @@
         android:textColor="@android:color/black"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.317"
+        app:layout_constraintHorizontal_bias="0.308"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextNumber2" />
 
@@ -86,7 +88,7 @@
         android:id="@+id/buttonAdd"
         android:layout_width="120dp"
         android:layout_height="35dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="35dp"
         android:background="#00917C"
         android:text="Add"
         android:textColor="#ffffff"
@@ -99,7 +101,7 @@
     <Button
         android:id="@+id/buttonSubtract"
         android:layout_width="120dp"
-        android:layout_height="40dp"
+        android:layout_height="35dp"
         android:layout_marginTop="35dp"
         android:layout_marginEnd="64dp"
         android:background="#00917C"
@@ -127,10 +129,11 @@
         android:id="@+id/imageView"
         android:layout_width="280dp"
         android:layout_height="140dp"
+        android:layout_marginTop="12dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.511"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/logo"
-        tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
