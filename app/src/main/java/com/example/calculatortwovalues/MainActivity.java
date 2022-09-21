@@ -67,6 +67,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-        calculate(v);
+        // Check for null value and replace it with an int
+        String input = et1.getText().toString();
+        String input2 = et2.getText().toString();
+        int value=0;
+        if (!"".equals(input) && !"".equals(input2)) {
+            value=Integer.parseInt(input);
+            value=Integer.parseInt(input2);
+            calculate(v);
+        }
     }
 }
